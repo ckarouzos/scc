@@ -1,0 +1,273 @@
+--------------------------------------------------------------------------------
+Command:            ./create 100000 100000 g100000_100000.txt
+Massif arguments:   (none)
+ms_print arguments: massif.out.882
+--------------------------------------------------------------------------------
+
+
+    MB
+7.322^        #                                                               
+     |        #:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::@   
+     |        #  : ::: :::::: : ::::::: :: : :::::::: :::: ::: :: :: : : :@   
+     |        #  : ::: :::::: : ::::::: :: : :::::::: :::: ::: :: :: : : :@   
+     |        #  : ::: :::::: : ::::::: :: : :::::::: :::: ::: :: :: : : :@   
+     |        #  : ::: :::::: : ::::::: :: : :::::::: :::: ::: :: :: : : :@   
+     |::::::::#  : ::: :::::: : ::::::: :: : :::::::: :::: ::: :: :: : : :@@@ 
+     |:      :#  : ::: :::::: : ::::::: :: : :::::::: :::: ::: :: :: : : :@   
+     |:      :#  : ::: :::::: : ::::::: :: : :::::::: :::: ::: :: :: : : :@   
+     |:      :#  : ::: :::::: : ::::::: :: : :::::::: :::: ::: :: :: : : :@   
+     |:      :#  : ::: :::::: : ::::::: :: : :::::::: :::: ::: :: :: : : :@   
+     |:      :#  : ::: :::::: : ::::::: :: : :::::::: :::: ::: :: :: : : :@   
+     |:      :#  : ::: :::::: : ::::::: :: : :::::::: :::: ::: :: :: : : :@   
+     |:      :#  : ::: :::::: : ::::::: :: : :::::::: :::: ::: :: :: : : :@   
+     |:      :#  : ::: :::::: : ::::::: :: : :::::::: :::: ::: :: :: : : :@   
+     |:      :#  : ::: :::::: : ::::::: :: : :::::::: :::: ::: :: :: : : :@   
+     |:      :#  : ::: :::::: : ::::::: :: : :::::::: :::: ::: :: :: : : :@   
+     |:      :#  : ::: :::::: : ::::::: :: : :::::::: :::: ::: :: :: : : :@   
+     |:      :#  : ::: :::::: : ::::::: :: : :::::::: :::: ::: :: :: : : :@   
+     |:      :#  : ::: :::::: : ::::::: :: : :::::::: :::: ::: :: :: : : :@   
+   0 +----------------------------------------------------------------------->Mi
+     0                                                                   681.8
+
+Number of snapshots: 78
+ Detailed snapshots: [3 (peak), 55, 65, 75]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1      2,231,909        5,675,984        5,672,704         3,280            0
+  2     76,732,386        5,676,008        5,672,705         3,303            0
+  3     80,056,416        7,677,224        7,673,857         3,367            0
+99.96% (7,673,857B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->72.94% (5,600,000B) 0x407CA0: __gnu_cxx::new_allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex>::allocate(unsigned long, void const*) (in /home/ckarouzos/Desktop/project/create)
+| ->72.94% (5,600,000B) 0x407101: __gnu_cxx::__alloc_traits<std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex> >::allocate(std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex>&, unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|   ->72.94% (5,600,000B) 0x40664A: std::_Vector_base<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex, std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex> >::_M_allocate(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|     ->72.94% (5,600,000B) 0x4053C3: std::_Vector_base<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex, std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex> >::_M_create_storage(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|       ->72.94% (5,600,000B) 0x404513: std::_Vector_base<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex, std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex> >::_Vector_base(unsigned long, std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex> const&) (in /home/ckarouzos/Desktop/project/create)
+|         ->72.94% (5,600,000B) 0x403948: std::vector<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex, std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex> >::vector(unsigned long, boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex const&, std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex> const&) (in /home/ckarouzos/Desktop/project/create)
+|           ->72.94% (5,600,000B) 0x402C7E: boost::vec_adj_list_impl<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config, boost::bidirectional_graph_helper_with_property<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config> >::vec_adj_list_impl(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|             ->72.94% (5,600,000B) 0x402284: boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::adjacency_list(unsigned long, boost::no_property const&) (in /home/ckarouzos/Desktop/project/create)
+|               ->72.94% (5,600,000B) 0x4016BA: main (in /home/ckarouzos/Desktop/project/create)
+|                 
+->10.43% (801,024B) 0x406E4A: __gnu_cxx::new_allocator<unsigned long>::allocate(unsigned long, void const*) (in /home/ckarouzos/Desktop/project/create)
+| ->10.43% (801,024B) 0x406445: __gnu_cxx::__alloc_traits<std::allocator<unsigned long> >::allocate(std::allocator<unsigned long>&, unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|   ->10.42% (800,000B) 0x404F70: std::_Vector_base<unsigned long, std::allocator<unsigned long> >::_M_allocate(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|   | ->10.42% (800,000B) 0x404161: std::_Vector_base<unsigned long, std::allocator<unsigned long> >::_M_create_storage(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|   |   ->10.42% (800,000B) 0x403319: std::_Vector_base<unsigned long, std::allocator<unsigned long> >::_Vector_base(unsigned long, std::allocator<unsigned long> const&) (in /home/ckarouzos/Desktop/project/create)
+|   |     ->10.42% (800,000B) 0x402650: std::vector<unsigned long, std::allocator<unsigned long> >::vector(unsigned long, unsigned long const&, std::allocator<unsigned long> const&) (in /home/ckarouzos/Desktop/project/create)
+|   |       ->10.42% (800,000B) 0x401AEC: main (in /home/ckarouzos/Desktop/project/create)
+|   |         
+|   ->00.01% (1,024B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->10.42% (800,000B) 0x40524A: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /home/ckarouzos/Desktop/project/create)
+| ->10.42% (800,000B) 0x404354: __gnu_cxx::__alloc_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|   ->10.42% (800,000B) 0x4037B8: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|     ->10.42% (800,000B) 0x40380B: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|       ->10.42% (800,000B) 0x402B27: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (in /home/ckarouzos/Desktop/project/create)
+|         ->10.42% (800,000B) 0x4024A6: std::vector<int, std::allocator<int> >::vector(unsigned long, int const&, std::allocator<int> const&) (in /home/ckarouzos/Desktop/project/create)
+|           ->05.21% (400,000B) 0x4019E6: main (in /home/ckarouzos/Desktop/project/create)
+|           | 
+|           ->05.21% (400,000B) 0x401A3D: main (in /home/ckarouzos/Desktop/project/create)
+|             
+->05.21% (400,000B) 0x406DD0: __gnu_cxx::new_allocator<boost::default_color_type>::allocate(unsigned long, void const*) (in /home/ckarouzos/Desktop/project/create)
+| ->05.21% (400,000B) 0x4063BB: __gnu_cxx::__alloc_traits<std::allocator<boost::default_color_type> >::allocate(std::allocator<boost::default_color_type>&, unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|   ->05.21% (400,000B) 0x404EA8: std::_Vector_base<boost::default_color_type, std::allocator<boost::default_color_type> >::_M_allocate(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|     ->05.21% (400,000B) 0x404031: std::_Vector_base<boost::default_color_type, std::allocator<boost::default_color_type> >::_M_create_storage(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|       ->05.21% (400,000B) 0x403195: std::_Vector_base<boost::default_color_type, std::allocator<boost::default_color_type> >::_Vector_base(unsigned long, std::allocator<boost::default_color_type> const&) (in /home/ckarouzos/Desktop/project/create)
+|         ->05.21% (400,000B) 0x402548: std::vector<boost::default_color_type, std::allocator<boost::default_color_type> >::vector(unsigned long, boost::default_color_type const&, std::allocator<boost::default_color_type> const&) (in /home/ckarouzos/Desktop/project/create)
+|           ->05.21% (400,000B) 0x401A94: main (in /home/ckarouzos/Desktop/project/create)
+|             
+->00.95% (72,833B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  4     80,056,550        7,676,632        7,673,281         3,351            0
+  5    117,263,020        7,676,720        7,673,353         3,367            0
+  6    132,080,065        7,676,632        7,673,281         3,351            0
+  7    148,083,690        7,676,632        7,673,281         3,351            0
+  8    157,147,690        7,676,632        7,673,281         3,351            0
+  9    168,902,565        7,676,632        7,673,281         3,351            0
+ 10    184,198,065        7,676,632        7,673,281         3,351            0
+ 11    193,262,065        7,676,632        7,673,281         3,351            0
+ 12    203,459,065        7,676,632        7,673,281         3,351            0
+ 13    215,072,315        7,676,632        7,673,281         3,351            0
+ 14    228,243,440        7,676,632        7,673,281         3,351            0
+ 15    243,114,065        7,676,632        7,673,281         3,351            0
+ 16    259,967,440        7,676,632        7,673,281         3,351            0
+ 17    269,314,690        7,676,632        7,673,281         3,351            0
+ 18    279,511,690        7,676,632        7,673,281         3,351            0
+ 19    290,416,815        7,676,632        7,673,281         3,351            0
+ 20    301,746,815        7,676,632        7,673,281         3,351            0
+ 21    313,643,315        7,676,632        7,673,281         3,351            0
+ 22    326,531,190        7,676,632        7,673,281         3,351            0
+ 23    340,410,440        7,676,632        7,673,281         3,351            0
+ 24    354,997,815        7,676,632        7,673,281         3,351            0
+ 25    371,001,440        7,676,632        7,673,281         3,351            0
+ 26    388,279,690        7,676,632        7,673,281         3,351            0
+ 27    406,124,440        7,676,632        7,673,281         3,351            0
+ 28    415,046,815        7,676,632        7,673,281         3,351            0
+ 29    424,252,440        7,676,632        7,673,281         3,351            0
+ 30    434,307,815        7,676,632        7,673,281         3,351            0
+ 31    444,363,190        7,676,632        7,673,281         3,351            0
+ 32    455,126,690        7,676,632        7,673,281         3,351            0
+ 33    466,315,065        7,676,632        7,673,281         3,351            0
+ 34    477,786,690        7,676,632        7,673,281         3,351            0
+ 35    489,399,940        7,676,632        7,673,281         3,351            0
+ 36    501,154,815        7,676,632        7,673,281         3,351            0
+ 37    513,901,065        7,676,632        7,673,281         3,351            0
+ 38    526,930,565        7,676,632        7,673,281         3,351            0
+ 39    540,668,190        7,676,632        7,673,281         3,351            0
+ 40    555,113,940        7,676,632        7,673,281         3,351            0
+ 41    569,842,940        7,676,632        7,673,281         3,351            0
+ 42    584,571,940        7,676,632        7,673,281         3,351            0
+ 43    599,725,815        7,676,632        7,673,281         3,351            0
+ 44    615,587,815        7,676,632        7,673,281         3,351            0
+ 45    631,449,815        7,676,632        7,673,281         3,351            0
+ 46    648,161,565        7,676,632        7,673,281         3,351            0
+ 47    665,298,190        7,676,632        7,673,281         3,351            0
+ 48    683,001,315        7,676,632        7,673,281         3,351            0
+ 49    683,709,440        7,676,632        7,673,281         3,351            0
+ 50    683,712,035        7,676,720        7,673,353         3,367            0
+ 51    683,715,105        7,676,632        7,673,281         3,351            0
+ 52    683,717,700        7,676,720        7,673,353         3,367            0
+ 53    683,720,770        7,676,632        7,673,281         3,351            0
+ 54    683,723,365        7,676,720        7,673,353         3,367            0
+ 55    683,726,435        7,676,632        7,673,281         3,351            0
+99.96% (7,673,281B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->72.95% (5,600,000B) 0x407CA0: __gnu_cxx::new_allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex>::allocate(unsigned long, void const*) (in /home/ckarouzos/Desktop/project/create)
+| ->72.95% (5,600,000B) 0x407101: __gnu_cxx::__alloc_traits<std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex> >::allocate(std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex>&, unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|   ->72.95% (5,600,000B) 0x40664A: std::_Vector_base<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex, std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex> >::_M_allocate(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|     ->72.95% (5,600,000B) 0x4053C3: std::_Vector_base<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex, std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex> >::_M_create_storage(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|       ->72.95% (5,600,000B) 0x404513: std::_Vector_base<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex, std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex> >::_Vector_base(unsigned long, std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex> const&) (in /home/ckarouzos/Desktop/project/create)
+|         ->72.95% (5,600,000B) 0x403948: std::vector<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex, std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex> >::vector(unsigned long, boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex const&, std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex> const&) (in /home/ckarouzos/Desktop/project/create)
+|           ->72.95% (5,600,000B) 0x402C7E: boost::vec_adj_list_impl<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config, boost::bidirectional_graph_helper_with_property<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config> >::vec_adj_list_impl(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|             ->72.95% (5,600,000B) 0x402284: boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::adjacency_list(unsigned long, boost::no_property const&) (in /home/ckarouzos/Desktop/project/create)
+|               ->72.95% (5,600,000B) 0x4016BA: main (in /home/ckarouzos/Desktop/project/create)
+|                 
+->10.43% (800,512B) 0x406E4A: __gnu_cxx::new_allocator<unsigned long>::allocate(unsigned long, void const*) (in /home/ckarouzos/Desktop/project/create)
+| ->10.43% (800,512B) 0x406445: __gnu_cxx::__alloc_traits<std::allocator<unsigned long> >::allocate(std::allocator<unsigned long>&, unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|   ->10.42% (800,000B) 0x404F70: std::_Vector_base<unsigned long, std::allocator<unsigned long> >::_M_allocate(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|   | ->10.42% (800,000B) 0x404161: std::_Vector_base<unsigned long, std::allocator<unsigned long> >::_M_create_storage(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|   |   ->10.42% (800,000B) 0x403319: std::_Vector_base<unsigned long, std::allocator<unsigned long> >::_Vector_base(unsigned long, std::allocator<unsigned long> const&) (in /home/ckarouzos/Desktop/project/create)
+|   |     ->10.42% (800,000B) 0x402650: std::vector<unsigned long, std::allocator<unsigned long> >::vector(unsigned long, unsigned long const&, std::allocator<unsigned long> const&) (in /home/ckarouzos/Desktop/project/create)
+|   |       ->10.42% (800,000B) 0x401AEC: main (in /home/ckarouzos/Desktop/project/create)
+|   |         
+|   ->00.01% (512B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->10.42% (800,000B) 0x40524A: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /home/ckarouzos/Desktop/project/create)
+| ->10.42% (800,000B) 0x404354: __gnu_cxx::__alloc_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|   ->10.42% (800,000B) 0x4037B8: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|     ->10.42% (800,000B) 0x40380B: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|       ->10.42% (800,000B) 0x402B27: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (in /home/ckarouzos/Desktop/project/create)
+|         ->10.42% (800,000B) 0x4024A6: std::vector<int, std::allocator<int> >::vector(unsigned long, int const&, std::allocator<int> const&) (in /home/ckarouzos/Desktop/project/create)
+|           ->05.21% (400,000B) 0x4019E6: main (in /home/ckarouzos/Desktop/project/create)
+|           | 
+|           ->05.21% (400,000B) 0x401A3D: main (in /home/ckarouzos/Desktop/project/create)
+|             
+->05.21% (400,000B) 0x406DD0: __gnu_cxx::new_allocator<boost::default_color_type>::allocate(unsigned long, void const*) (in /home/ckarouzos/Desktop/project/create)
+| ->05.21% (400,000B) 0x4063BB: __gnu_cxx::__alloc_traits<std::allocator<boost::default_color_type> >::allocate(std::allocator<boost::default_color_type>&, unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|   ->05.21% (400,000B) 0x404EA8: std::_Vector_base<boost::default_color_type, std::allocator<boost::default_color_type> >::_M_allocate(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|     ->05.21% (400,000B) 0x404031: std::_Vector_base<boost::default_color_type, std::allocator<boost::default_color_type> >::_M_create_storage(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|       ->05.21% (400,000B) 0x403195: std::_Vector_base<boost::default_color_type, std::allocator<boost::default_color_type> >::_Vector_base(unsigned long, std::allocator<boost::default_color_type> const&) (in /home/ckarouzos/Desktop/project/create)
+|         ->05.21% (400,000B) 0x402548: std::vector<boost::default_color_type, std::allocator<boost::default_color_type> >::vector(unsigned long, boost::default_color_type const&, std::allocator<boost::default_color_type> const&) (in /home/ckarouzos/Desktop/project/create)
+|           ->05.21% (400,000B) 0x401A94: main (in /home/ckarouzos/Desktop/project/create)
+|             
+->00.95% (72,769B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 56    683,729,030        7,676,720        7,673,353         3,367            0
+ 57    683,732,100        7,676,632        7,673,281         3,351            0
+ 58    683,734,695        7,676,720        7,673,353         3,367            0
+ 59    683,737,765        7,676,632        7,673,281         3,351            0
+ 60    683,740,360        7,676,720        7,673,353         3,367            0
+ 61    683,743,430        7,676,632        7,673,281         3,351            0
+ 62    683,746,025        7,676,720        7,673,353         3,367            0
+ 63    683,749,095        7,676,632        7,673,281         3,351            0
+ 64    683,751,690        7,676,720        7,673,353         3,367            0
+ 65    683,754,760        7,676,632        7,673,281         3,351            0
+99.96% (7,673,281B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->72.95% (5,600,000B) 0x407CA0: __gnu_cxx::new_allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex>::allocate(unsigned long, void const*) (in /home/ckarouzos/Desktop/project/create)
+| ->72.95% (5,600,000B) 0x407101: __gnu_cxx::__alloc_traits<std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex> >::allocate(std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex>&, unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|   ->72.95% (5,600,000B) 0x40664A: std::_Vector_base<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex, std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex> >::_M_allocate(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|     ->72.95% (5,600,000B) 0x4053C3: std::_Vector_base<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex, std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex> >::_M_create_storage(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|       ->72.95% (5,600,000B) 0x404513: std::_Vector_base<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex, std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex> >::_Vector_base(unsigned long, std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex> const&) (in /home/ckarouzos/Desktop/project/create)
+|         ->72.95% (5,600,000B) 0x403948: std::vector<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex, std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex> >::vector(unsigned long, boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex const&, std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex> const&) (in /home/ckarouzos/Desktop/project/create)
+|           ->72.95% (5,600,000B) 0x402C7E: boost::vec_adj_list_impl<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config, boost::bidirectional_graph_helper_with_property<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config> >::vec_adj_list_impl(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|             ->72.95% (5,600,000B) 0x402284: boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::adjacency_list(unsigned long, boost::no_property const&) (in /home/ckarouzos/Desktop/project/create)
+|               ->72.95% (5,600,000B) 0x4016BA: main (in /home/ckarouzos/Desktop/project/create)
+|                 
+->10.43% (800,512B) 0x406E4A: __gnu_cxx::new_allocator<unsigned long>::allocate(unsigned long, void const*) (in /home/ckarouzos/Desktop/project/create)
+| ->10.43% (800,512B) 0x406445: __gnu_cxx::__alloc_traits<std::allocator<unsigned long> >::allocate(std::allocator<unsigned long>&, unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|   ->10.42% (800,000B) 0x404F70: std::_Vector_base<unsigned long, std::allocator<unsigned long> >::_M_allocate(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|   | ->10.42% (800,000B) 0x404161: std::_Vector_base<unsigned long, std::allocator<unsigned long> >::_M_create_storage(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|   |   ->10.42% (800,000B) 0x403319: std::_Vector_base<unsigned long, std::allocator<unsigned long> >::_Vector_base(unsigned long, std::allocator<unsigned long> const&) (in /home/ckarouzos/Desktop/project/create)
+|   |     ->10.42% (800,000B) 0x402650: std::vector<unsigned long, std::allocator<unsigned long> >::vector(unsigned long, unsigned long const&, std::allocator<unsigned long> const&) (in /home/ckarouzos/Desktop/project/create)
+|   |       ->10.42% (800,000B) 0x401AEC: main (in /home/ckarouzos/Desktop/project/create)
+|   |         
+|   ->00.01% (512B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->10.42% (800,000B) 0x40524A: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /home/ckarouzos/Desktop/project/create)
+| ->10.42% (800,000B) 0x404354: __gnu_cxx::__alloc_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|   ->10.42% (800,000B) 0x4037B8: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|     ->10.42% (800,000B) 0x40380B: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|       ->10.42% (800,000B) 0x402B27: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (in /home/ckarouzos/Desktop/project/create)
+|         ->10.42% (800,000B) 0x4024A6: std::vector<int, std::allocator<int> >::vector(unsigned long, int const&, std::allocator<int> const&) (in /home/ckarouzos/Desktop/project/create)
+|           ->05.21% (400,000B) 0x4019E6: main (in /home/ckarouzos/Desktop/project/create)
+|           | 
+|           ->05.21% (400,000B) 0x401A3D: main (in /home/ckarouzos/Desktop/project/create)
+|             
+->05.21% (400,000B) 0x406DD0: __gnu_cxx::new_allocator<boost::default_color_type>::allocate(unsigned long, void const*) (in /home/ckarouzos/Desktop/project/create)
+| ->05.21% (400,000B) 0x4063BB: __gnu_cxx::__alloc_traits<std::allocator<boost::default_color_type> >::allocate(std::allocator<boost::default_color_type>&, unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|   ->05.21% (400,000B) 0x404EA8: std::_Vector_base<boost::default_color_type, std::allocator<boost::default_color_type> >::_M_allocate(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|     ->05.21% (400,000B) 0x404031: std::_Vector_base<boost::default_color_type, std::allocator<boost::default_color_type> >::_M_create_storage(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|       ->05.21% (400,000B) 0x403195: std::_Vector_base<boost::default_color_type, std::allocator<boost::default_color_type> >::_Vector_base(unsigned long, std::allocator<boost::default_color_type> const&) (in /home/ckarouzos/Desktop/project/create)
+|         ->05.21% (400,000B) 0x402548: std::vector<boost::default_color_type, std::allocator<boost::default_color_type> >::vector(unsigned long, boost::default_color_type const&, std::allocator<boost::default_color_type> const&) (in /home/ckarouzos/Desktop/project/create)
+|           ->05.21% (400,000B) 0x401A94: main (in /home/ckarouzos/Desktop/project/create)
+|             
+->00.95% (72,769B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 66    683,757,355        7,676,720        7,673,353         3,367            0
+ 67    683,760,425        7,676,632        7,673,281         3,351            0
+ 68    683,760,916        7,676,112        7,672,769         3,343            0
+ 69    683,761,050        7,676,040        7,672,705         3,335            0
+ 70    683,766,139        7,677,072        7,673,729         3,343            0
+ 71    683,781,433        6,877,064        6,873,729         3,335            0
+ 72    683,781,626        6,477,056        6,473,729         3,327            0
+ 73    683,781,819        6,077,048        6,073,729         3,319            0
+ 74    683,782,012        5,677,040        5,673,729         3,311            0
+ 75    683,790,505        5,677,016        5,673,728         3,288            0
+99.94% (5,673,728B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->98.64% (5,600,000B) 0x407CA0: __gnu_cxx::new_allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex>::allocate(unsigned long, void const*) (in /home/ckarouzos/Desktop/project/create)
+| ->98.64% (5,600,000B) 0x407101: __gnu_cxx::__alloc_traits<std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex> >::allocate(std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex>&, unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|   ->98.64% (5,600,000B) 0x40664A: std::_Vector_base<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex, std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex> >::_M_allocate(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|     ->98.64% (5,600,000B) 0x4053C3: std::_Vector_base<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex, std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex> >::_M_create_storage(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|       ->98.64% (5,600,000B) 0x404513: std::_Vector_base<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex, std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex> >::_Vector_base(unsigned long, std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex> const&) (in /home/ckarouzos/Desktop/project/create)
+|         ->98.64% (5,600,000B) 0x403948: std::vector<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex, std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex> >::vector(unsigned long, boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex const&, std::allocator<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config::stored_vertex> const&) (in /home/ckarouzos/Desktop/project/create)
+|           ->98.64% (5,600,000B) 0x402C7E: boost::vec_adj_list_impl<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config, boost::bidirectional_graph_helper_with_property<boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>, boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::config> >::vec_adj_list_impl(unsigned long) (in /home/ckarouzos/Desktop/project/create)
+|             ->98.64% (5,600,000B) 0x402284: boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::no_property, boost::no_property, boost::no_property, boost::listS>::adjacency_list(unsigned long, boost::no_property const&) (in /home/ckarouzos/Desktop/project/create)
+|               ->98.64% (5,600,000B) 0x4016BA: main (in /home/ckarouzos/Desktop/project/create)
+|                 
+->01.28% (72,704B) 0x4EBAEFE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+| ->01.28% (72,704B) 0x40106B8: call_init.part.0 (dl-init.c:72)
+|   ->01.28% (72,704B) 0x40107C9: _dl_init (dl-init.c:30)
+|     ->01.28% (72,704B) 0x4000C68: ??? (in /lib/x86_64-linux-gnu/ld-2.23.so)
+|       ->01.28% (72,704B) 0x2: ???
+|         ->01.28% (72,704B) 0x1FFF00011D: ???
+|           ->01.28% (72,704B) 0x1FFF000126: ???
+|             ->01.28% (72,704B) 0x1FFF00012D: ???
+|               ->01.28% (72,704B) 0x1FFF000134: ???
+|                 
+->00.02% (1,024B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 76    714,890,672           73,744           73,728            16            0
+ 77    714,899,433           72,712           72,704             8            0
