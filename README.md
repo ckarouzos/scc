@@ -1,5 +1,6 @@
-# scc
-Study, implementation and comparison of different algorithms for finding the Strongly Connected Components of a directed graph
+# SCC
+##Study, implementation and comparison of different algorithms for finding the Strongly Connected Components of a directed graph.
+
 
 This project was developed by Asimina Mertzani and Constantinos Karouzos as part of the Politecnico di Milano Advanced Algorithms and Parallel Programming course, taught by Prof. Fabrizio Ferrandi in the spring semester of 2018.
 
